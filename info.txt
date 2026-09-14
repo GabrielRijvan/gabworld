@@ -1,0 +1,207 @@
+GA.B WORLD — FICHE DE PRODUCTION
+================================
+
+TYPE
+----
+Site vitrine one-page réel pour Ga.B World.
+
+OBJECTIF
+--------
+Présenter l'agence, ses offres, son approche et ses réalisations afin de transformer
+les visiteurs en prospects.
+
+TECHNOLOGIES
+------------
+- HTML5
+- CSS3
+- JavaScript vanilla
+- Aucun framework
+- Aucun Tailwind / Bootstrap / React / Vue / Angular
+
+ARBORESCENCE
+------------
+GaB-World/
+├── index.html
+├── style.css
+├── script.js
+├── info.txt
+└── assets/
+    ├── images/
+    │   └── logo.png
+    └── icons/
+
+IDENTITÉ / PALETTE
+------------------
+#082BCB — primaire
+#2599FB — secondaire
+#AAD9F9 — clair
+#003C57 — bleu sombre
+#051C24 — sombre
+
+Le logo réel n'est PAS à générer.
+Prévoir le fichier :
+assets/images/logo.png
+
+Si le logo n'est pas encore fourni, le site doit rester fonctionnel avec le nom
+Ga.B World affiché comme solution de secours.
+
+SECTIONS
+--------
+01. Header
+02. Hero
+03. Offres
+04. Pourquoi Ga.B World
+05. Réalisations
+06. À propos
+07. Processus
+08. Témoignages
+09. FAQ
+10. CTA contact
+11. Footer
+
+OFFRES
+------
+Site Essentiel
+- One-page personnalisé
+- Design sur mesure
+- Responsive
+- Services / galerie
+- Boutons de contact
+- Formulaire
+- SEO de base
+
+Site Business
+- Structure plus complète
+- Design sur mesure
+- Animations / interactions
+- Services détaillés / portfolio
+- Formulaire / CTA
+- SEO de base
+- Performance
+- Badge : "La plus choisie"
+
+Site Premium
+- Structure personnalisée
+- Direction artistique premium
+- Animations avancées
+- Effets de scroll
+- Galeries avancées
+- Formulaires personnalisés
+- Optimisation mobile / performance
+
+PRIX
+----
+Aucun tarif réel n'a été fourni au moment de la génération.
+NE PAS inventer de prix.
+
+Les tarifs devront être ajoutés directement dans les cartes lorsque la grille
+tarifaire définitive sera fournie.
+
+RÉALISATIONS
+------------
+Les trois blocs actuels sont des placeholders de présentation.
+Remplacer par les vrais projets de Ga.B World avant publication.
+
+Pour chaque projet réel :
+- capture / mockup
+- nom du projet
+- secteur
+- courte description
+- lien réel
+
+Ne jamais inventer de client, résultat, chiffre ou récompense.
+
+TÉMOIGNAGES
+-----------
+Aucun témoignage client réel fourni.
+La section contient volontairement un placeholder.
+Remplacer uniquement par de vrais témoignages.
+
+CONTACT
+-------
+Les coordonnées actuelles dans index.html sont des placeholders :
+- WhatsApp : https://wa.me/261000000000
+- Email : contact@gabworld.example
+
+À REMPLACER AVANT PUBLICATION.
+
+FORMULAIRE
+----------
+Un formulaire de contact pourra être ajouté/connecté à un service externe.
+Le site étant réalisé en HTML/CSS/JS, ne pas prétendre qu'un formulaire envoie
+des emails sans service de traitement réellement configuré.
+
+IMAGES
+------
+logo.png
+- Statut : À FOURNIR PAR L'UTILISATEUR
+- Chemin : assets/images/logo.png
+- Format : PNG
+- Fond : idéalement transparent
+- Rôle : identité dans le header
+
+Captures de projets
+- Statut : À FOURNIR / À RECHERCHER selon les projets
+- Chemin recommandé : assets/images/projects/
+- Format : WebP ou JPG
+- Recommandation : 1600 px minimum de largeur
+- Ratio : selon les captures réelles
+- Rôle : présentation des réalisations
+
+VISUEL HERO
+-----------
+Le visuel principal actuel est construit en CSS/HTML.
+Aucune image externe n'est nécessaire.
+
+ICÔNES
+------
+Le site utilise volontairement des caractères graphiques simples dans certains
+endroits pour éviter de bloquer le projet sur une dépendance externe.
+
+Si des icônes sont ajoutées ultérieurement :
+source recommandée : Flaticon
+recherches suggérées :
+- arrow up right
+- website
+- responsive
+- design
+- speed
+- animation
+- communication
+- check
+
+ANIMATIONS
+----------
+- Loader d'entrée
+- Reveal au scroll
+- Stagger léger des éléments
+- Hover des cartes
+- Hover du mockup
+- Badges flottants
+- Rotation du bouton projet
+- Accordion FAQ
+- Menu mobile animé
+- Parallax très léger du hero
+
+PRINCIPES
+---------
+- Animations basées principalement sur transform / opacity.
+- Respect de prefers-reduced-motion.
+- Pas de surcharge d'animations.
+- Mobile = adaptation réelle, pas simple réduction.
+- Navigation avec ancres.
+- Contrastes et focus à conserver.
+- Pas de Lorem Ipsum.
+- Pas de fausses preuves sociales.
+
+À REMPLACER AVANT MISE EN LIGNE
+--------------------------------
+1. logo.png
+2. numéro WhatsApp
+3. adresse email
+4. captures des réalisations
+5. liens des réalisations
+6. tarifs des offres
+7. témoignages réels, si disponibles
+8. éventuels contenus textuels définitifs
+9. éventuel formulaire externe
