@@ -1,0 +1,2116 @@
+﻿==================================================
+ARBORESCENCE DU PROJET
+==================================================
+
+Ga.B World Modification Novembre/
+├── assets
+│   └── images
+│       ├── 0001.jpg
+│       ├── 01.jfif
+│       ├── 02.jfif
+│       ├── 03.jfif
+│       ├── 04.jfif
+│       ├── logo.png
+│       ├── logo2.png
+│       ├── logo3.png
+│       ├── logo4.png
+│       ├── madadiscovery.jpg
+│       └── Studioracine.jpg
+├── index.html
+├── info.txt
+├── script.js
+└── style.css
+
+
+==================================================
+CODE SOURCE
+==================================================
+
+==================================================
+FICHIER : index.html
+==================================================
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ga.B World â€” CrÃ©ation de sites web modernes, personnalisÃ©s, rapides et performants."
+    />
+    <meta name="theme-color" content="#051C24" />
+    <title>Ga.B World â€” CrÃ©ation de sites web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <link rel="icon" type="image/png" href="assets/images/logo2.png" /> -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/logo2.png"
+      media="(prefers-color-scheme: light)"
+    />
+
+    <!-- Mode sombre : logo blanc -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/logo4.png"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="page-loader" aria-hidden="true">
+        <span>Ga.B World</span>
+    </div> -->
+    <div class="page-loader" id="page-loader">
+      <img src="assets/images/logo.png" alt="Logo" />
+    </div>
+
+    <header class="site-header">
+      <a class="logo" href="#accueil" aria-label="Ga.B World â€” Accueil">
+        <img
+          src="assets/images/logo2.png"
+          alt="Ga.B World"
+          onerror="
+            this.style.display = 'none';
+            this.nextElementSibling.style.display = 'inline';
+          "
+        />
+        <span>Ga.B World</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#realisations">RÃ©alisations</a>
+        <a href="#apropos">Ã€ propos</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#contact">Parlons de votre projet</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="accueil" >
+        <!-- On remplace le div glow par un canvas -->
+        <canvas id="hero-canvas"></canvas>
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">CrÃ©ation web sur mesure</p>
+          <h1>Votre prÃ©sence en ligne mÃ©rite <span>mieux.</span></h1>
+          <p class="hero-text">
+            Nous crÃ©ons des sites web modernes, personnalisÃ©s et performants
+            pour donner Ã  votre activitÃ© une prÃ©sence qui inspire confiance.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact"
+              >DÃ©marrer un projet <span>â†—</span></a
+            >
+            <a class="btn btn-ghost" href="#realisations"
+              >Voir nos rÃ©alisations</a
+            >
+          </div>
+        </div>
+     <!-- NOUVEAU : Le carrousel/rotation de tÃ©moignages -->
+    <div class="hero-testimonial-ticker">
+      <div class="hero-testi-item active">
+        <span class="testi-stars">â˜…â˜…â˜…â˜…â˜…</span>
+        <p>Â« Le site est d'une fluiditÃ© incroyable et nos clients adorent la nouvelle interface. Â»</p>
+        <small><strong>Lova Maharavo</strong> â€” Mada Discovery</small>
+      </div>
+      <div class="hero-testi-item">
+        <span class="testi-stars">â˜…â˜…â˜…â˜…â˜…</span>
+        <p>Â« Un accompagnement sur le design et l'ergonomie mobile au top. Je recommande Ã  100% ! Â»</p>
+        <small><strong>Sarah R.</strong> â€” Studio Racine</small>
+      </div>
+      <div class="hero-testi-item">
+        <span class="testi-stars">â˜…â˜…â˜…â˜…â˜…</span>
+        <p>Â« Un service rapide, un design Ã©purÃ© et une attention particuliÃ¨re portÃ©e aux dÃ©tails. Â»</p>
+        <small><strong>Joseph DANA</strong> â€” CrÃ©ateur indÃ©pendant</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="services section" id="services">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Nos offres</p>
+          <h2>Un site adaptÃ© Ã  <span>votre ambition.</span></h2>
+          <p>
+            Des solutions pensÃ©es pour votre activitÃ©, votre budget et votre
+            objectif.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <p class="card-number">01</p>
+            <h3>Site Essentiel</h3>
+            <p class="card-desc">
+              Pour indÃ©pendants, petites entreprises et activitÃ©s qui veulent
+              aller Ã  l'essentiel.
+            </p>
+            <ul>
+              <li>One-page personnalisÃ©</li>
+              <li>Design sur mesure</li>
+              <li>Responsive mobile / tablette</li>
+              <li>Services & galerie</li>
+              <li>Boutons de contact</li>
+              <li>Formulaire de contact</li>
+              <li>SEO de base</li>
+            </ul>
+            <a href="#contact" class="text-link"
+              >Choisir cette offre <span>â†—</span></a
+            >
+          </article>
+
+          <article class="pricing-card featured reveal">
+            <div class="popular">La plus choisie</div>
+            <p class="card-number">02</p>
+            <h3>Site Business</h3>
+            <p class="card-desc">
+              Pour les entreprises qui souhaitent une prÃ©sence plus complÃ¨te et
+              plus impactante.
+            </p>
+            <ul>
+              <li>Structure plus complÃ¨te</li>
+              <li>Design sur mesure</li>
+              <li>Animations & interactions</li>
+              <li>Services dÃ©taillÃ©s & portfolio</li>
+              <li>Formulaire & CTA stratÃ©giques</li>
+              <li>SEO de base</li>
+              <li>Optimisation des performances</li>
+            </ul>
+            <a href="#contact" class="text-link"
+              >Choisir cette offre <span>â†—</span></a
+            >
+          </article>
+
+          <article class="pricing-card reveal">
+            <p class="card-number">03</p>
+            <h3>Site Premium</h3>
+            <p class="card-desc">
+              Pour les marques qui veulent une expÃ©rience digitale plus
+              immersive et distinctive.
+            </p>
+            <ul>
+              <li>Structure entiÃ¨rement personnalisÃ©e</li>
+              <li>Direction artistique premium</li>
+              <li>Animations avancÃ©es</li>
+              <li>Effets de scroll & interactions</li>
+              <li>Galeries avancÃ©es</li>
+              <li>Formulaires personnalisÃ©s</li>
+              <li>Optimisation mobile & performance</li>
+            </ul>
+            <a href="#contact" class="text-link">Parlons-en <span>â†—</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="why section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pourquoi Ga.B World</p>
+          <h2>Pas juste un site.<br /><span>Une prÃ©sence.</span></h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-item reveal">
+            <span class="why-icon">01</span>
+            <h3>Design personnalisÃ©</h3>
+            <p>
+              Chaque interface est pensÃ©e autour de votre identitÃ© et de votre
+              activitÃ©.
+            </p>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-icon">02</span>
+            <h3>Responsive</h3>
+            <p>Une expÃ©rience fluide sur ordinateur, tablette et smartphone.</p>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-icon">03</span>
+            <h3>Rapide & lÃ©ger</h3>
+            <p>
+              Une construction propre pour privilÃ©gier fluiditÃ©, clartÃ© et
+              performance.
+            </p>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-icon">04</span>
+            <h3>Animations & interactions</h3>
+            <p>
+              Des mouvements maÃ®trisÃ©s pour donner du rythme sans nuire Ã 
+              l'expÃ©rience.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section realisation -->
+      <!-- 
+      <section class="portfolio section" id="realisations">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <p class="eyebrow">RÃ©alisations</p>
+            <h2>Des projets qui parlent<br /><span>pour nous.</span></h2>
+          </div>
+          <p>
+            DÃ©couvrez une sÃ©lection de sites crÃ©Ã©s pour prÃ©senter des activitÃ©s,
+            des services et des marques avec plus d'impact.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-large reveal">
+            <div class="project-image placeholder-image">
+              <span>PROJET 01</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p>Tourisme</p>
+                <h3>Site vitrine touristique</h3>
+              </div>
+              <a href="#" aria-label="Voir le projet 01">â†—</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image placeholder-image">
+              <span>PROJET 02</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p>Service</p>
+                <h3>Site vitrine professionnel</h3>
+              </div>
+              <a href="#" aria-label="Voir le projet 02">â†—</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image placeholder-image">
+              <span>PROJET 03</span>
+            </div>
+            <div class="project-info">
+              <div>
+                <p>PrÃ©sentation</p>
+                <h3>Portfolio / prÃ©sentation</h3>
+              </div>
+              <a href="#" aria-label="Voir le projet 03">â†—</a>
+            </div>
+          </article>
+        </div>
+      </section> -->
+
+      <!-- Section realisation -->
+      <section class="portfolio section" id="realisations">
+        <div class="section-heading reveal">
+          <p class="eyebrow">RÃ©alisations</p>
+          <h2>Des projets qui parlent<br /><span>pour nous.</span></h2>
+          <p>
+            DÃ©couvrez une sÃ©lection de sites crÃ©Ã©s pour prÃ©senter des activitÃ©s,
+            des services et des marques avec plus d'impact.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Projet 01 -->
+          <article class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <span class="project-tag">Tourisme</span>
+              <img
+                src="assets/images/madadiscovery.jpg"
+                alt="Capture d'Ã©cran Site vitrine touristique"
+                loading="lazy"
+              />
+            </div>
+            <div class="portfolio-content">
+              <h3>Site vitrine touristique</h3>
+              <p>
+                Une immersion visuelle et ergonomique conÃ§ue pour valoriser une
+                destination et capter l'attention des voyageurs.
+              </p>
+              <a
+                href="https://madadiscovery.vercel.app/"
+                class="btn btn-ghost portfolio-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                Voir le site <span>â†—</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 02 -->
+          <article class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <span class="project-tag">Service</span>
+              <img
+                src="assets/images/Studioracine.jpg"
+                alt="Capture d'Ã©cran Site vitrine professionnel"
+                loading="lazy"
+              />
+            </div>
+            <div class="portfolio-content">
+              <h3>Site vitrine professionnel</h3>
+              <p>
+                Une communication claire et incarnÃ©e pour inspirer confiance,
+                valoriser ton univers et transformer ta communautÃ© en clients
+                fidÃ¨les.
+              </p>
+              <a
+                href="https://studioracine.vercel.app/"
+                class="btn btn-ghost portfolio-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                Voir le site <span>â†—</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 03 -->
+          <article class="portfolio-card reveal">
+            <div class="portfolio-image">
+              <span class="project-tag">PrÃ©sentation</span>
+              <img
+                src="assets/images/projet3.jpg"
+                alt="Capture d'Ã©cran Portfolio / prÃ©sentation"
+                loading="lazy"
+              />
+            </div>
+            <div class="portfolio-content">
+              <h3>Portfolio / prÃ©sentation</h3>
+              <p>
+                Un espace sur mesure et Ã©purÃ© pour mettre en valeur les
+                rÃ©alisations et l'identitÃ© unique d'une marque ou d'un crÃ©ateur.
+              </p>
+              <a
+                href="https://exemple3.com"
+                class="btn btn-ghost portfolio-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                Voir le site <span>â†—</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section" id="apropos">
+        <div class="about-visual reveal">
+          <div class="about-number">G<br /><span>B</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">Ã€ propos</p>
+          <h2>CrÃ©er du web avec<br /><span>une vraie intention.</span></h2>
+          <p>
+            Ga.B World accompagne les professionnels et les entreprises dans la
+            crÃ©ation d'une prÃ©sence web moderne, claire et adaptÃ©e Ã  leurs
+            objectifs.
+          </p>
+          <p>
+            Notre approche combine design, dÃ©veloppement et sens du dÃ©tail pour
+            construire des expÃ©riences qui ne se contentent pas d'Ãªtre belles :
+            elles doivent aussi Ãªtre utiles.
+          </p>
+          <a class="text-link" href="#contact"
+            >Parler de votre projet <span>â†—</span></a
+          >
+        </div>
+      </section>
+
+      <section class="process section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Notre mÃ©thode</p>
+          <h2>Simple pour vous.<br /><span>PrÃ©cis dans l'exÃ©cution.</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="step reveal">
+            <div class="step-image">
+              <img
+                src="assets/images/01.jfif"
+                alt="Ã‰change avec le client"
+                loading="lazy"
+              />
+              <span class="step-badge">01</span>
+            </div>
+            <div class="step-content">
+              <h3>Ã‰change</h3>
+              <p>
+                Nous comprenons votre activitÃ©, vos besoins et votre objectif.
+              </p>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <div class="step-image">
+              <img
+                src="assets/images/02.jfif"
+                alt="Conception et design du site"
+                loading="lazy"
+              />
+              <span class="step-badge">02</span>
+            </div>
+            <div class="step-content">
+              <h3>Conception</h3>
+              <p>Nous dÃ©finissons l'univers visuel et la structure du site.</p>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <div class="step-image">
+              <img
+                src="assets/images/03.jfif"
+                alt="DÃ©veloppement et intÃ©gration web"
+                loading="lazy"
+              />
+              <span class="step-badge">03</span>
+            </div>
+            <div class="step-content">
+              <h3>DÃ©veloppement</h3>
+              <p>
+                Le design prend vie avec une expÃ©rience responsive et animÃ©e.
+              </p>
+            </div>
+          </article>
+
+          <article class="step reveal">
+            <div class="step-image">
+              <img
+                src="assets/images/04.jfif"
+                alt="Mise en ligne du site web"
+                loading="lazy"
+              />
+              <span class="step-badge">04</span>
+            </div>
+            <div class="step-content">
+              <h3>Mise en ligne</h3>
+              <p>AprÃ¨s validation, votre site est prÃ©parÃ© pour Ãªtre publiÃ©.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section TÃ©moignages -->
+      <section class="testimonials section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">TÃ©moignages</p>
+          <h2>Ce que nos clients<br /><span>disent de nous.</span></h2>
+          <p>
+            DÃ©couvrez les retours de ceux qui nous ont fait confiance pour
+            concrÃ©tiser leur projet web.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- TÃ©moignage 01 -->
+          <article class="testimonial-card reveal">
+            <div class="testimonial-rating" aria-label="Note de 5 sur 5">
+              â˜…â˜…â˜…â˜…â˜…
+            </div>
+            <p class="testimonial-text">
+              Â« L'Ã©quipe de Ga.B World a su capter exactement l'essence de notre
+              projet touristique. Le site est d'une fluiditÃ© incroyable et nos
+              clients adorent la nouvelle interface. Un travail pro et rÃ©actif !
+              Â»
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <span>LM</span>
+              </div>
+              <div class="author-info">
+                <strong>Lova Maharavo</strong>
+                <small>Fondateur, Mada Discovery</small>
+              </div>
+            </div>
+          </article>
+
+          <!-- TÃ©moignage 02 -->
+          <article class="testimonial-card reveal">
+            <div class="testimonial-rating" aria-label="Note de 5 sur 5">
+              â˜…â˜…â˜…â˜…â˜…
+            </div>
+            <p class="testimonial-text">
+              Â« Notre nouveau site vitrine reflÃ¨te enfin le positionnement haut
+              de gamme de notre studio. L'accompagnement sur le design et
+              l'ergonomie mobile a Ã©tÃ© un vrai plus. Je recommande Ã  100% ! Â»
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <span>SR</span>
+              </div>
+              <div class="author-info">
+                <strong>Sarah R.</strong>
+                <small>Directrice crÃ©ative, Studio Racine</small>
+              </div>
+            </div>
+          </article>
+
+          <!-- TÃ©moignage 03 -->
+          <article class="testimonial-card reveal">
+            <div class="testimonial-rating" aria-label="Note de 5 sur 5">
+              â˜…â˜…â˜…â˜…â˜…
+            </div>
+            <p class="testimonial-text">
+              Â« Un service rapide, un design Ã©purÃ© et une attention particuliÃ¨re
+              portÃ©e aux dÃ©tails. Ga.B World a transformÃ© notre simple portfolio
+              en une vitrine captivante pour nos prospects. Â»
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <span>AR</span>
+              </div>
+              <div class="author-info">
+                <strong>Joseph DANA</strong>
+                <small>Consultant &amp; CrÃ©ateur indÃ©pendant</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq section" id="faq">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>
+            Les questions que vous<br /><span>vous posez peut-Ãªtre.</span>
+          </h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>
+              Combien coÃ»te la crÃ©ation d'un site ? <span>+</span>
+            </summary>
+            <p>
+              Le tarif dÃ©pend de l'offre et du niveau de personnalisation. Les
+              prix peuvent Ãªtre affichÃ©s ici dÃ¨s que votre grille tarifaire
+              dÃ©finitive est fixÃ©e.
+            </p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>
+              Combien de temps faut-il pour crÃ©er un site ? <span>+</span>
+            </summary>
+            <p>
+              Le dÃ©lai dÃ©pend de la complexitÃ© du projet, du nombre de pages et
+              de la rapiditÃ© des validations. Un calendrier prÃ©cis est dÃ©fini au
+              dÃ©marrage.
+            </p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>
+              Le site sera-t-il adaptÃ© au mobile ? <span>+</span>
+            </summary>
+            <p>
+              Oui. Chaque site est pensÃ© pour offrir une expÃ©rience adaptÃ©e aux
+              smartphones, tablettes et ordinateurs.
+            </p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>
+              Est-il possible d'intÃ©grer un formulaire de contact ?
+              <span>+</span>
+            </summary>
+            <p>
+              Oui. Un formulaire peut Ãªtre intÃ©grÃ© et connectÃ© Ã  un service
+              externe adaptÃ© au projet.
+            </p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>
+              Pouvez-vous mettre le site en ligne ? <span>+</span>
+            </summary>
+            <p>
+              Oui, l'accompagnement peut inclure la prÃ©paration et la mise en
+              ligne selon votre hÃ©bergement et votre nom de domaine.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Un projet en tÃªte ?</p>
+          <h2>
+            Construisons quelque chose<br /><span>qui vous ressemble.</span>
+          </h2>
+          <p>
+            Expliquez-nous votre projet et nous vous rÃ©pondrons avec les
+            prochaines Ã©tapes.
+          </p>
+          <div class="contact-actions">
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/261384528742?text=Bonjour%20Ga.B%20World%2C%20je%20souhaite%20discuter%20d'un%20projet%20de%20site%20web."
+              target="_blank"
+              rel="noopener"
+            >
+              WhatsApp <span>â†—</span>
+            </a>
+            <a
+              class="btn btn-light"
+              href="mailto:rijvangabriel@gmail.com?subject=Demande%20de%20crÃ©ation%20de%20site%20web"
+            >
+              Envoyer un email <span>â†—</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Ga.B World</strong>
+        <p>CrÃ©ation de sites web modernes, personnalisÃ©s et performants.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a><a href="#realisations">RÃ©alisations</a
+        ><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">
+        Â© <span id="year"></span> Ga.B World. Tous droits rÃ©servÃ©s.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+==================================================
+FICHIER : script.js
+==================================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const loader = document.querySelector(".page-loader");
+
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    const nav = document.querySelector(".nav");
+
+    const year = document.querySelector("#year");
+
+
+    /* =========================
+       PAGE LOADER
+    ========================= */
+
+    window.addEventListener("load", () => {
+
+        setTimeout(() => {
+            loader?.classList.add("loaded");
+        }, 1000);
+
+    });
+
+
+    /* =========================
+       ANNÃ‰E DU FOOTER
+    ========================= */
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+
+
+    /* =========================
+       MENU MOBILE
+    ========================= */
+
+    menuToggle?.addEventListener("click", () => {
+
+        const isOpen = nav.classList.toggle("open");
+
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+
+    });
+
+
+    nav?.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            nav.classList.remove("open");
+
+            menuToggle?.setAttribute("aria-expanded", "false");
+
+        });
+
+    });
+
+
+    /* =========================
+       ANIMATIONS AU DÃ‰FILEMENT
+    ========================= */
+
+    const revealItems = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries, obs) => {
+
+        entries.forEach(entry => {
+
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.add("visible");
+
+            obs.unobserve(entry.target);
+
+        });
+
+    }, {
+        threshold: 0.12
+    });
+
+
+    revealItems.forEach((item, index) => {
+
+        item.style.transitionDelay =
+            `${Math.min((index % 4) * 70, 210)}ms`;
+
+        observer.observe(item);
+
+    });
+
+
+    /* =========================
+       EFFET DE DÃ‰FILEMENT HERO
+    ========================= */
+
+    const visual = document.querySelector(".hero-visual");
+
+    window.addEventListener("scroll", () => {
+
+        if (
+            !visual ||
+            window.innerWidth < 901 ||
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+            return;
+        }
+
+        const rect = visual.getBoundingClientRect();
+
+        const progress = Math.max(
+            -1,
+            Math.min(
+                1,
+                (window.innerHeight / 2 - (rect.top + rect.height / 2))
+                / window.innerHeight
+            )
+        );
+
+        const browser = visual.querySelector(".browser");
+
+        if (browser) {
+            browser.style.translate = `0 ${progress * 12}px`;
+        }
+
+    }, {
+        passive: true
+    });
+
+});
+
+/* --- Effet de lueur dynamique sur la section Why --- */
+document.querySelectorAll(".why-item").forEach(card => {
+    card.addEventListener("mousemove", e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+    });
+});
+
+
+/* =========================
+   ANIMATION EN CASCADE - TÃ‰MOIGNAGES
+========================= */
+const testimonialCards = document.querySelectorAll(".testimonials-grid .testimonial-card");
+
+testimonialCards.forEach((card, index) => {
+    // Ajoute un dÃ©calage progressif (150ms, 300ms, 450ms...) pour chaque carte
+    card.style.transitionDelay = `${index * 150}ms`;
+});
+
+/* =========================
+   CANVAS BACKGROUND GRID
+========================= */
+const canvas = document.getElementById('hero-canvas');
+if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let mouse = { x: -1000, y: -1000 };
+
+    function resize() {
+        width = canvas.width = canvas.offsetWidth;
+        height = canvas.height = canvas.offsetHeight;
+    }
+
+    window.addEventListener('resize', resize);
+    resize();
+
+    window.addEventListener('mousemove', (e) => {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+    });
+
+    const gridSize = 45;
+
+    function draw() {
+        ctx.clearRect(0, 0, width, height);
+
+        // Lignes de grille
+        for (let x = 0; x < width; x += gridSize) {
+            for (let y = 0; y < height; y += gridSize) {
+                const dx = x - mouse.x;
+                const dy = y - mouse.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                const maxDist = 180;
+
+                let alpha = 0.05;
+                let size = 1.5;
+
+                if (dist < maxDist) {
+                    const factor = 1 - dist / maxDist;
+                    alpha = 0.05 + factor * 0.45;
+                    size = 1.5 + factor * 2;
+                }
+
+                ctx.fillStyle = `rgba(20, 20, 20, ${alpha})`;
+                ctx.beginPath();
+                ctx.arc(x, y, size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+        requestAnimationFrame(draw);
+    }
+    draw();
+}
+
+
+/* =========================
+   TÃ‰MOIGNAGES DU HERO (ROTABLE)
+========================= */
+document.addEventListener("DOMContentLoaded", () => {
+    const testiItems = document.querySelectorAll(".hero-testi-item");
+    if (testiItems.length > 0) {
+        let currentIndex = 0;
+
+        setInterval(() => {
+            testiItems[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % testiItems.length;
+            testiItems[currentIndex].classList.add("active");
+        }, 4000); // Change toutes les 4 secondes
+    }
+});
+
+
+==================================================
+FICHIER : style.css
+==================================================
+
+/* ==========================================
+   1. VARIABLES & CONFIGURATION GLOBALE
+   ========================================== */
+:root {
+    --color-primary: #082BCB;
+    --color-secondary: #2599FB;
+    --color-light: #AAD9F9;
+    --color-dark-blue: #003C57;
+    --color-dark: #051C24;
+    --white: #ffffff;
+    --muted: #61717a;
+    --border: rgba(5, 28, 36, .12);
+    --radius: 24px;
+    --container: 1180px;
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    font-family: "Manrope", sans-serif; 
+    color: var(--color-dark); 
+    background: #f7fafc; 
+    line-height: 1.6; 
+    overflow-x: hidden; 
+}
+
+a { 
+    color: inherit; 
+    text-decoration: none; 
+}
+
+button, input, textarea { 
+    font: inherit; 
+}
+
+button { 
+    cursor: pointer; 
+}
+
+img { 
+    max-width: 100%; 
+    display: block; 
+}
+
+/* ==========================================
+   2. PAGE LOADER
+   ========================================== */
+.page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.page-loader.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.page-loader img {
+    width: 150px;
+    height: auto;
+    animation: loaderLogo 1.2s ease-in-out infinite;
+}
+
+@keyframes loaderLogo {
+    0% { opacity: 0.4; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.4; transform: scale(0.9); }
+}
+
+/* ==========================================
+   3. HEADER & NAVIGATION
+   ========================================== */
+.site-header { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 100; 
+    max-width: 1240px; 
+    margin: 18px auto; 
+    padding: 14px 18px 14px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background: rgba(255,255,255,.9); 
+    backdrop-filter: blur(18px); 
+    border: 1px solid rgba(5,28,36,.08); 
+    border-radius: 999px; 
+    box-shadow: 0 10px 40px rgba(5,28,36,.06); 
+}
+
+.logo { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    font-weight: 800; 
+    letter-spacing: -.04em; 
+}
+
+.logo img { 
+    width: 34px; 
+    height: 34px; 
+    object-fit: contain; 
+}
+
+.logo span { 
+    display: inline; 
+}
+
+.nav { 
+    display: flex; 
+    align-items: center; 
+    gap: 26px; 
+    font-size: .85rem; 
+    font-weight: 700; 
+}
+
+.nav a { 
+    transition: color .25s ease; 
+}
+
+.nav a:hover { 
+    color: var(--color-primary); 
+}
+
+.nav-cta { 
+    background: var(--color-dark); 
+    color: white; 
+    padding: 11px 17px; 
+    border-radius: 999px; 
+}
+
+.nav-cta:hover { 
+    color: white !important; 
+    background: var(--color-primary); 
+}
+
+.menu-toggle { 
+    display: none; 
+    border: 0; 
+    background: none; 
+    width: 40px; 
+    height: 40px; 
+}
+
+.menu-toggle span { 
+    display: block; 
+    width: 22px; 
+    height: 2px; 
+    background: var(--color-dark); 
+    margin: 5px auto; 
+}
+
+/* ==========================================
+   4. STYLES COMMUNS DE SECTIONS
+   ========================================== */
+.section { 
+    width: min(var(--container), calc(100% - 48px)); 
+    margin: auto; 
+    padding: 120px 0; 
+}
+
+.eyebrow { 
+    color: var(--color-primary); 
+    text-transform: uppercase; 
+    letter-spacing: .16em; 
+    font-size: .9rem; 
+    font-weight: 800; 
+    margin-bottom: 16px; 
+}
+
+h2 { 
+    letter-spacing: -.055em; 
+    line-height: .98; 
+}
+
+h2 span { 
+    color: var(--color-primary); 
+}
+
+.section-heading { 
+    max-width: 800px; 
+    margin-bottom: 58px; 
+}
+
+.section-heading h2 { 
+    font-size: clamp(3rem, 6vw, 5.5rem); 
+}
+
+.section-heading > p:last-child { 
+    color: var(--muted); 
+    max-width: 570px; 
+    margin-top: 22px; 
+}
+
+/* Boutons */
+.btn { 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 12px; 
+    padding: 15px 22px; 
+    border-radius: 999px; 
+    font-weight: 800; 
+    font-size: .82rem; 
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease; 
+}
+
+.btn:hover { 
+    transform: translateY(-3px); 
+}
+
+.btn-primary { 
+    background: var(--color-primary); 
+    color: white; 
+    box-shadow: 0 12px 28px rgba(8,43,203,.2); 
+}
+
+.btn-primary:hover { 
+    background: var(--color-dark-blue); 
+}
+
+.btn-ghost { 
+    border: 1px solid var(--border); 
+    background: white; 
+}
+
+.btn-light { 
+    background: white; 
+    color: var(--color-dark); 
+}
+
+.text-link { 
+    margin-top: auto; 
+    font-size: .78rem; 
+    font-weight: 800; 
+    color: var(--color-primary); 
+}
+
+/* ==========================================
+   5. SECTION ACCUEIL (HERO)
+   ========================================== */
+/* ==========================================
+   5. SECTION ACCUEIL (HERO)
+   ========================================== */
+.hero { 
+    min-height: 100vh; 
+    padding-top: 120px; 
+    padding-bottom: 80px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.hero h1 { 
+    font-size: clamp(3.5rem, 7vw, 6.5rem); 
+    max-width: 800px; 
+    letter-spacing: -.055em; 
+    line-height: .98; 
+}
+
+.hero h1 span { 
+    color: var(--color-primary); 
+}
+
+.hero-text { 
+    max-width: 620px; 
+    color: var(--muted); 
+    font-size: 1.1rem; 
+    margin: 28px auto 36px; 
+}
+
+.hero-actions { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 16px; 
+}
+
+/* Modification de la section Hero pour gÃ©rer les calques */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    background: #f7fafc;
+}
+
+#hero-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-copy {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ==========================================
+   TÃ‰MOIGNAGES DU HERO (100% STYLE CSS)
+   ========================================== */
+
+.hero-testimonial-ticker {
+    position: relative;
+    margin-top: 40px;
+    height: 100px;
+    width: 100%;
+    max-width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Carte style Glassmorphism */
+.hero-testi-item {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 16px 28px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(8, 43, 203, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(5, 28, 36, 0.05),
+                0 2px 6px rgba(5, 28, 36, 0.03);
+    
+    /* Animation de transition */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(14px) scale(0.97);
+    transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.5s ease;
+}
+
+/* Ã‰tat actif */
+.hero-testi-item.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+/* Ã‰toiles */
+.testi-stars {
+    color: #ffb800;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+/* Texte du tÃ©moignage */
+.hero-testi-item p {
+    color: var(--color-dark);
+    font-size: 0.88rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.45;
+    margin: 0;
+    text-align: center;
+}
+
+/* Auteur */
+.hero-testi-item small {
+    color: var(--muted);
+    font-size: 0.74rem;
+    letter-spacing: -0.01em;
+}
+
+.hero-testi-item small strong {
+    color: var(--color-dark);
+    font-weight: 700;
+}
+
+/* ==========================================
+   6. SECTION SERVICES (OFFRES)
+   ========================================== */
+.services {
+    border-bottom: 1px solid var(--border);
+}
+
+.pricing-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 18px; 
+}
+
+.pricing-card { 
+    position: relative; 
+    background: white; 
+    border: 1px solid var(--border); 
+    border-radius: var(--radius); 
+    padding: 34px; 
+    min-height: 580px; 
+    display: flex; 
+    flex-direction: column; 
+    transition: transform .35s ease, box-shadow .35s ease; 
+}
+
+.pricing-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 24px 55px rgba(5,28,36,.1); 
+}
+
+.pricing-card.featured { 
+    background: var(--color-dark); 
+    color: white; 
+    border-color: var(--color-dark); 
+}
+
+.popular { 
+    position: absolute; 
+    top: 18px; 
+    right: 18px; 
+    background: var(--color-secondary); 
+    color: white; 
+    padding: 7px 11px; 
+    border-radius: 999px; 
+    font-size: .6rem; 
+    font-weight: 800; 
+}
+
+.card-number { 
+    color: var(--color-primary); 
+    font-size: .7rem; 
+    font-weight: 800; 
+    margin-bottom: 45px; 
+}
+
+.featured .card-number { 
+    color: var(--color-light); 
+}
+
+.pricing-card h3 { 
+    font-size: 1.7rem; 
+    letter-spacing: -.04em; 
+}
+
+.card-desc { 
+    color: var(--muted); 
+    font-size: .83rem; 
+    margin: 12px 0 26px; 
+}
+
+.featured .card-desc { 
+    color: #aebcc2; 
+}
+
+.pricing-card ul { 
+    list-style: none; 
+    border-top: 1px solid var(--border); 
+    padding-top: 20px; 
+}
+
+.featured ul { 
+    border-color: rgba(255,255,255,.13); 
+}
+
+.pricing-card li { 
+    font-size: .76rem; 
+    padding: 7px 0; 
+    color: #41525a; 
+}
+
+.featured li { 
+    color: #d7e0e4; 
+}
+
+.pricing-card li::before { 
+    content: "âœ“"; 
+    color: var(--color-secondary); 
+    font-weight: 800; 
+    margin-right: 9px; 
+}
+
+.featured .text-link { 
+    color: var(--color-light); 
+}
+
+/* ==========================================
+   7. SECTION "POURQUOI GA.B WORLD"
+   ========================================== */
+.why {
+    background: var(--color-dark);
+    color: white;
+    width: 100%;
+    padding-left: max(24px, calc((100vw - var(--container))/2));
+    padding-right: max(24px, calc((100vw - var(--container))/2));
+    position: relative;
+    overflow: hidden;
+}
+
+.why .section-heading {
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 24px;
+    padding: 34px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                background 0.4s ease, 
+                border-color 0.4s ease, 
+                box-shadow 0.4s ease;
+}
+
+.why-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(37, 153, 251, 0.08), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.why-item:hover::before {
+    opacity: 1;
+}
+
+.why-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(37, 153, 251, 0.4);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 20px rgba(37, 153, 251, 0.1);
+}
+
+.why-icon {
+    display: inline-block;
+    color: var(--color-secondary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    margin-bottom: 45px;
+    background: rgba(37, 153, 251, 0.08);
+    padding: 6px 14px;
+    border-radius: 999px;
+    width: max-content;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.why-item:hover .why-icon {
+    transform: scale(1.1) translateX(4px);
+    background: var(--color-secondary);
+    color: #ffffff;
+}
+
+.why-item h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.why-item:hover h3 {
+    color: var(--color-light);
+}
+
+.why-item p {
+    color: #aebcc2;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.why-item:hover p {
+    color: #d7e0e4;
+}
+
+/* ==========================================
+   8. SECTION RÃ‰ALISATIONS (PORTFOLIO)
+   ========================================== */
+.portfolio.section {
+    background: #edf2f7; 
+    border-bottom: 1px solid var(--border);
+    padding: 120px 0;
+    width: 100%;
+    padding-left: max(24px, calc((100vw - var(--container))/2));
+    padding-right: max(24px, calc((100vw - var(--container))/2));
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.portfolio-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 55px rgba(5, 28, 36, 0.1);
+    border-color: rgba(37, 153, 251, 0.3);
+}
+
+.portfolio-image {
+    aspect-ratio: 16 / 10;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #051C24;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.project-tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    border-radius: 999px;
+    z-index: 2;
+}
+
+.portfolio-content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.portfolio-content h3 {
+    font-size: 1.25rem;
+    letter-spacing: -0.03em;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+}
+
+.portfolio-content p {
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.portfolio-btn {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 20px;
+    font-size: 0.78rem;
+    border-color: var(--border);
+    background: #f7fafc;
+    transition: all 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-btn {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 20px rgba(8, 43, 203, 0.2);
+}
+
+/* ==========================================
+   9. SECTION Ã€ PROPOS
+   ========================================== */
+.about { 
+    display: grid; 
+    grid-template-columns: .8fr 1fr; 
+    gap: 100px; 
+    align-items: center; 
+    border-bottom: 1px solid var(--border);
+}
+
+.about-visual { 
+    min-height: 500px; 
+    border-radius: 28px; 
+    background: var(--color-light); 
+    display: grid; 
+    place-items: center; 
+    overflow: hidden; 
+}
+
+.about-number { 
+    font-size: 11rem; 
+    line-height: .68; 
+    font-weight: 800; 
+    letter-spacing: -.1em; 
+    color: var(--color-dark-blue); 
+    transform: rotate(-8deg); 
+}
+
+.about-number span { 
+    color: var(--color-primary); 
+}
+
+.about-copy { 
+    max-width: 600px; 
+}
+
+.about-copy h2 { 
+    font-size: clamp(3rem, 5vw, 5rem); 
+    margin-bottom: 28px; 
+}
+
+.about-copy > p:not(.eyebrow) { 
+    color: var(--muted); 
+    font-size: .9rem; 
+    margin-bottom: 18px; 
+}
+/* ==========================================
+   10. SECTION PROCESS (NOTRE MÃ‰THODE)
+   ========================================== */
+.process {
+    background: #ffffff;
+    padding: 120px 40px;
+    border-bottom: 1px solid var(--border);
+}
+
+.timeline { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.step { 
+    background: #f7fafc;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(5, 28, 36, 0.08);
+    border-color: rgba(37, 153, 251, 0.3);
+    background: white;
+}
+
+.step-image {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    width: 100%;
+    overflow: hidden;
+    background: #051C24;
+}
+
+.step-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.step:hover .step-image img {
+    transform: scale(1.05);
+}
+
+.step-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    color: var(--color-primary);
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(5, 28, 36, 0.1);
+}
+
+.step-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.step-content h3 { 
+    font-size: 1.1rem; 
+    letter-spacing: -0.02em;
+    margin-bottom: 8px; 
+    color: var(--color-dark);
+}
+
+.step-content p { 
+    color: var(--muted); 
+    font-size: 0.78rem; 
+    line-height: 1.6;
+}
+/* ==========================================
+   11. SECTION TÃ‰MOIGNAGES
+   ========================================== */
+/* ==========================================
+   11. SECTION TÃ‰MOIGNAGES
+   ========================================== */
+.testimonials {
+    border-bottom: 1px solid var(--border);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 55px rgba(5, 28, 36, 0.08);
+    border-color: rgba(37, 153, 251, 0.3);
+}
+
+.testimonial-rating {
+    color: #ffb800;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.testimonial-text {
+    color: var(--color-dark);
+    font-size: 0.88rem;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 28px;
+    flex-grow: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+}
+
+.author-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-light);
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-info strong {
+    font-size: 0.9rem;
+    color: var(--color-dark);
+    line-height: 1.2;
+}
+
+.author-info small {
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin-top: 3px;
+}
+
+/* Adaptations responsive */
+@media (max-width: 900px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .testimonial-card {
+        padding: 24px;
+    }
+}
+
+/* ==========================================
+   12. SECTION FAQ
+   ========================================== */
+.faq {
+    border-bottom: 1px solid var(--border);
+}
+
+.faq-list { 
+    max-width: 900px; 
+}
+
+.faq-item { 
+    border-top: 1px solid var(--border); 
+}
+
+.faq-item:last-child { 
+    border-bottom: 1px solid var(--border); 
+}
+
+.faq-item summary { 
+    list-style: none; 
+    cursor: pointer; 
+    padding: 25px 0; 
+    font-size: 1rem; 
+    font-weight: 700; 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.faq-item summary::-webkit-details-marker { 
+    display: none; 
+}
+
+.faq-item summary span { 
+    color: var(--color-primary); 
+    transition: transform .25s; 
+}
+
+.faq-item[open] summary span { 
+    transform: rotate(45deg); 
+}
+
+.faq-item p { 
+    color: var(--muted); 
+    font-size: .83rem; 
+    max-width: 750px; 
+    padding: 0 50px 25px 0; 
+}
+
+/* ==========================================
+   13. SECTION CONTACT & FOOTER
+   ========================================== */
+.contact { 
+    padding-bottom: 100px; 
+}
+
+.contact-card { 
+    background: var(--color-dark); 
+    color: white; 
+    border-radius: 32px; 
+    padding: clamp(45px, 8vw, 90px); 
+    text-align: center; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.contact-card::before { 
+    content: ""; 
+    position: absolute; 
+    width: 400px; 
+    height: 400px; 
+    border: 1px solid rgba(170,217,249,.15); 
+    border-radius: 50%; 
+    left: -150px; 
+    top: -180px; 
+}
+
+.contact-card::after { 
+    content: ""; 
+    position: absolute; 
+    width: 300px; 
+    height: 300px; 
+    border: 1px solid rgba(37,153,251,.2); 
+    border-radius: 50%; 
+    right: -120px; 
+    bottom: -170px; 
+}
+
+.contact-card > * { 
+    position: relative; 
+    z-index: 1; 
+}
+
+.contact-card .eyebrow { 
+    color: var(--color-light); 
+}
+
+.contact-card h2 { 
+    font-size: clamp(3rem, 6vw, 5.5rem); 
+}
+
+.contact-card > p:not(.eyebrow) { 
+    color: #aebcc2; 
+    max-width: 600px; 
+    margin: 24px auto 30px; 
+}
+
+.contact-actions { 
+    justify-content: center; 
+}
+
+.footer { 
+    width: min(var(--container), calc(100% - 48px)); 
+    margin: auto; 
+    padding: 40px 0 55px; 
+    display: grid; 
+    grid-template-columns: 1fr auto; 
+    gap: 30px; 
+    border-top: 1px solid var(--border); 
+}
+
+.footer strong { 
+    font-size: 1.2rem; 
+}
+
+.footer p { 
+    color: var(--muted); 
+    font-size: .72rem; 
+    max-width: 350px; 
+    margin-top: 8px; 
+}
+
+.footer-links { 
+    display: flex; 
+    gap: 22px; 
+    font-size: .72rem; 
+    font-weight: 700; 
+}
+
+.footer-links a:hover { 
+    color: var(--color-primary); 
+}
+
+.copyright { 
+    grid-column: 1/-1; 
+    margin-top: 15px; 
+}
+
+/* ==========================================
+   14. ANIMATIONS & RESPONSIVE GLOBAL
+   ========================================== */
+.reveal { 
+    opacity: 0; 
+    transform: translateY(35px); 
+    transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); 
+}
+
+.reveal.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.reveal-delay { 
+    transition-delay: .15s; 
+}
+
+@media (max-width: 900px) {
+    .site-header { margin: 12px 14px; }
+    .menu-toggle { display: block; }
+    .nav { position: absolute; top: calc(100% + 10px); left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; padding: 18px; background: white; border-radius: 22px; box-shadow: 0 20px 45px rgba(5,28,36,.12); }
+    .nav.open { display: flex; }
+    .nav-cta { text-align: center; }
+    .hero { grid-template-columns: 1fr; padding-top: 150px; }
+    .hero-visual { min-height: 450px; }
+    .pricing-grid { grid-template-columns: 1fr; }
+    .pricing-card { min-height: auto; }
+    .why-grid { grid-template-columns: repeat(2,1fr); }
+    .why-item:nth-child(2) { border-right: 0; }
+    .why-item:nth-child(3), .why-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,.15); }
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .about { grid-template-columns: 1fr; gap: 45px; }
+    .about-visual { min-height: 360px; }
+    .timeline { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .footer { grid-template-columns: 1fr; }
+    .footer-links { flex-wrap: wrap; }
+}
+
+@media (max-width: 600px) {
+    .section { width: min(100% - 30px, var(--container)); padding: 85px 0; }
+    .hero { padding-top: 125px; min-height: auto; }
+    .hero h1 { font-size: clamp(3rem, 15vw, 4.8rem); }
+    .hero-visual { min-height: 350px; }
+    .browser-screen { min-height: 300px; }
+    .mock-content { padding: 50px 15px 20px; }
+    .mock-content h2 { font-size: 2.5rem; }
+    .floating-badge { font-size: .58rem; padding: 9px 11px; }
+    .badge-one { left: -5px; }
+    .badge-two { right: -5px; }
+    .why { padding-left: 15px; padding-right: 15px; }
+    .why-grid { grid-template-columns: 1fr; }
+    .portfolio-grid { grid-template-columns: 1fr; gap: 16px; }
+    .timeline { grid-template-columns: 1fr; gap: 16px; }
+    .contact-card { border-radius: 24px; }
+    .contact-card h2 { font-size: 3rem; }
+    .footer { width: min(100% - 30px, var(--container)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+}
+

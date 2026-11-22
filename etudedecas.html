@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Étude de cas projet — Découvrez comment Ga.B World conçoit des sites web modernes, rapides et sur mesure." />
+  <meta name="theme-color" content="#051C24" />
+  <title>Étude de cas — Ga.B World</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="etudedecas.css" />
+
+  <link rel="icon" type="image/png" href="assets/images/logo2.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="assets/images/logo4.png" media="(prefers-color-scheme: dark)" />
+</head>
+
+<body>
+  <div class="page-loader" id="page-loader">
+    <img src="assets/images/logo.png" alt="Logo Ga.B World" />
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html#accueil" aria-label="Ga.B World — Accueil">
+      <img src="assets/images/logo2.png" alt="Ga.B World" onerror="
+            this.style.display = 'none';
+            this.nextElementSibling.style.display = 'inline';
+          " />
+      <span>Ga.B World</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#services">Services</a>
+      <a href="realisation.html">Réalisations</a>
+      <a href="index.html#apropos">À propos</a>
+      <a href="index.html#faq">FAQ</a>
+      <a class="nav-cta" href="https://tally.so/r/LDP7lp" target="_blank" rel="noopener">Démarrer mon projet ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- En-tête de l'étude de cas -->
+    <section class="case-hero section">
+      <div class="case-top-bar reveal">
+        <a href="realisation.html" class="back-link">← Toutes les réalisations</a>
+        <div class="case-switcher" aria-label="Choisir une autre étude de cas">
+          <a href="etudedecas.html?projet=madadiscovery" data-project-link="madadiscovery">Mada Discovery</a>
+          <a href="etudedecas.html?projet=studioracine" data-project-link="studioracine">Studio Racine</a>
+          <a href="etudedecas.html?projet=sarahcm" data-project-link="sarahcm">Sarah.CM</a>
+        </div>
+      </div>
+
+      <div class="case-header-grid">
+        <div class="case-intro reveal">
+          <p class="eyebrow" id="case-category">Tourisme</p>
+          <h1 id="case-title">Mada Discovery — <span>Site vitrine touristique.</span></h1>
+          <p class="case-lead" id="case-lead">
+            Une immersion visuelle et ergonomique conçue pour valoriser une
+            destination et capter l'attention des voyageurs.
+          </p>
+          <div class="case-actions">
+            <a id="case-live-url" href="https://madadiscovery.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener">
+              Visiter le site en ligne <span>↗</span>
+            </a>
+            <a href="https://tally.so/r/LDP7lp" class="btn btn-ghost" target="_blank" rel="noopener">
+              Démarrer mon projet <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="case-cover reveal">
+          <img id="case-image" src="assets/images/madadiscovery.jpg" alt="Aperçu du projet Mada Discovery" />
+        </div>
+      </div>
+
+      <!-- Fiche synthèse -->
+      <div class="case-meta-grid reveal">
+        <div class="meta-card">
+          <span>Client / Univers</span>
+          <strong id="meta-client">Mada Discovery</strong>
+        </div>
+        <div class="meta-card">
+          <span>Secteur</span>
+          <strong id="meta-sector">Tourisme &amp; Découverte</strong>
+        </div>
+        <div class="meta-card">
+          <span>Format</span>
+          <strong id="meta-format">Site web sur mesure &amp; responsive</strong>
+        </div>
+        <div class="meta-card">
+          <span>Focus principal</span>
+          <strong id="meta-focus">Clarté, immersion &amp; mobile</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Détails de l'étude de cas -->
+    <section class="case-details section">
+      <div class="case-story-grid">
+        <article class="case-block reveal">
+          <p class="eyebrow">01 / Contexte &amp; Enjeu</p>
+          <h2>Ce qu'il fallait <span>résoudre.</span></h2>
+          <p id="case-context">
+            Présenter une offre touristique riche et attractive sans surcharger la
+            lecture, tout en offrant un parcours fluide sur mobile comme sur
+            ordinateur.
+          </p>
+        </article>
+
+        <article class="case-block reveal">
+          <p class="eyebrow">02 / Approche &amp; Exécution</p>
+          <h2>Notre réponse <span>design &amp; technique.</span></h2>
+          <p id="case-solution">
+            Nous avons structuré une hiérarchie visuelle claire, soigné les
+            contrastes et les temps de chargement, et intégré des transitions
+            mesurées pour guider le visiteur naturellement vers l'action.
+          </p>
+        </article>
+      </div>
+
+      <!-- Points clés livrés -->
+      <div class="case-highlights reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Livrables &amp; Axes clés</p>
+          <h2>Ce qui a été <span>mis en place.</span></h2>
+        </div>
+
+        <div class="highlights-grid" id="case-highlights">
+          <article class="highlight-card">
+            <span>01</span>
+            <h3>Direction visuelle cohérente</h3>
+            <p>Mise en valeur des visuels et d'une typographie lisible sur tous les écrans.</p>
+          </article>
+          <article class="highlight-card">
+            <span>02</span>
+            <h3>Ergonomie mobile soignée</h3>
+            <p>Navigation fluide, espacements adaptés et appels à l'action accessibles.</p>
+          </article>
+          <article class="highlight-card">
+            <span>03</span>
+            <h3>Performance &amp; fluidité</h3>
+            <p>Code léger, animations maîtrisées et chargement rapide des contenus.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appel à l'action -->
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Envie d'un résultat à votre image ?</p>
+        <h2>
+          Parlons de votre<br /><span>prochain projet.</span>
+        </h2>
+        <p>
+          Partagez vos objectifs et vos besoins pour recevoir une proposition
+          sur mesure adaptée à votre activité.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary contact-btn-tally" href="https://tally.so/r/LDP7lp" target="_blank" rel="noopener">
+            Démarrer mon projet <span>↗</span>
+          </a>
+          <a class="btn btn-light contact-btn-realisations" href="realisation.html">
+            Voir d'autres projets
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Ga.B World</strong>
+      <p>Création de sites web modernes, personnalisés et performants.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#services">Services</a>
+      <a href="realisation.html">Réalisations</a>
+      <a href="https://tally.so/r/LDP7lp" target="_blank" rel="noopener">Démarrer mon projet</a>
+    </div>
+    <p class="copyright">
+      © <span id="year"></span> Ga.B World. Tous droits réservés.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const studies = {
+        madadiscovery: {
+          titleHtml: 'Mada Discovery — <span>Site vitrine touristique.</span>',
+          pageTitle: "Étude de cas : Mada Discovery — Ga.B World",
+          category: "Tourisme",
+          lead: "Une immersion visuelle et ergonomique conçue pour valoriser une destination, structurer l'offre et capter l'attention des voyageurs.",
+          image: "assets/images/madadiscovery.jpg",
+          imageAlt: "Capture d'écran du projet Mada Discovery",
+          liveUrl: "https://madadiscovery.vercel.app/",
+          client: "Mada Discovery",
+          sector: "Tourisme & Découverte",
+          format: "Site web responsive & immersif",
+          focus: "Découverte, clarté & prise de contact",
+          context:
+            "Les visiteurs recherchant une destination ou un séjour ont besoin d'une lecture rapide, rassurante et visuellement inspirante dès les premières secondes, particulièrement sur smartphone.",
+          solution:
+            "Nous avons pensé une architecture aérée qui met en avant les contenus clés, rythme la découverte par des sections distinctes et facilite le passage à l'action sans friction.",
+          highlights: [
+            {
+              num: "01",
+              title: "Immersion visuelle maîtrisée",
+              desc: "Mise en scène des visuels de voyage avec un cadrage soigné et des transitions douces."
+            },
+            {
+              num: "02",
+              title: "Parcours de lecture clair",
+              desc: "Hiérarchie de titres et sections pensées pour orienter le voyageur sans le perdre."
+            },
+            {
+              num: "03",
+              title: "Expérience multi-supports",
+              desc: "Adaptation fluide sur mobile, tablette et grand écran avec des temps de réponse rapides."
+            }
+          ]
+        },
+        studioracine: {
+          titleHtml: 'Studio Racine — <span>Site vitrine professionnel.</span>',
+          pageTitle: "Étude de cas : Studio Racine — Ga.B World",
+          category: "Service",
+          lead: "Une communication claire et incarnée pour inspirer confiance, valoriser l'univers du studio et transformer l'audience en clients.",
+          image: "assets/images/Studioracine.jpg",
+          imageAlt: "Capture d'écran du projet Studio Racine",
+          liveUrl: "https://studioracine.vercel.app/",
+          client: "Studio Racine",
+          sector: "Services & Création",
+          format: "Site vitrine sur mesure",
+          focus: "Crédibilité, identité & conversion",
+          context:
+            "Un studio ou prestataire de services a besoin d'une vitrine qui affirme son positionnement dès l'arrivée, tout en expliquant simplement sa valeur ajoutée.",
+          solution:
+            "Nous avons conçu une interface épurée et structurée qui allie élégance éditoriale, lisibilité des offres et boutons d'action placés aux moments clés du parcours.",
+          highlights: [
+            {
+              num: "01",
+              title: "Positionnement affirmé",
+              desc: "Un message direct et une identité visuelle cohérente qui renforcent la légitimité du studio."
+            },
+            {
+              num: "02",
+              title: "Structure orientée conversion",
+              desc: "Cheminement clair entre la présentation des services, les preuves et la prise de contact."
+            },
+            {
+              num: "03",
+              title: "Finition & micro-interactions",
+              desc: "Animations subtiles au défilement et au survol pour dynamiser la navigation."
+            }
+          ]
+        },
+        sarahcm: {
+          titleHtml: 'Sarah.CM — <span>Community Manager &amp; Stratège.</span>',
+          pageTitle: "Étude de cas : Sarah.CM — Ga.B World",
+          category: "Social Media",
+          lead: "Une vitrine dynamique orientée conversion pour Sarah Dupuis (Community Manager & Social Media Strategist), mêlant preuve sociale, chiffres clés animés et modales d'études de cas.",
+          image: "assets/images/SarahCM.jpg",
+          imageAlt: "Capture d'écran Sarah.CM — Community Manager & Social Media Strategist",
+          liveUrl: "https://sarah-cm.vercel.app/",
+          client: "Sarah Dupuis (Sarah.CM)",
+          sector: "Social Media & Content Strategy",
+          format: "One-page interactif orienté conversion",
+          focus: "Preuve sociale, dynamisme & prise de rendez-vous",
+          context:
+            "Dans le secteur très visuel du Community Management et du contenu court (Instagram, TikTok, LinkedIn), il fallait se démarquer immédiatement avec une page capable de prouver la performance en quelques secondes et de convertir les visiteurs en consultations.",
+          solution:
+            "Nous avons bâti une expérience énergique avec un Hero à badges flottants, des compteurs de performances animés au défilement, des cartes d'offres 360°, une modale interactive pour explorer les campagnes clients et un formulaire de contact à labels flottants.",
+          highlights: [
+            {
+              num: "01",
+              title: "Preuve sociale & chiffres animés",
+              desc: "Badges flottants dans le Hero (+240% de portée, 3.5M de vues) et compteurs dynamiques pour crédibiliser l'expertise dès l'arrivée."
+            },
+            {
+              num: "02",
+              title: "Études de cas en modale interactive",
+              desc: "Consultation instantanée du défi, de la stratégie et des KPIs de chaque campagne client sans quitter la page."
+            },
+            {
+              num: "03",
+              title: "Parcours orienté consultation",
+              desc: "Architecture rythmée (Offres 360°, Méthode en 4 étapes, FAQ accordéon et formulaire fluide) pensée pour maximiser les demandes."
+            }
+          ]
+        }
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const key = studies[params.get("projet")] ? params.get("projet") : "madadiscovery";
+      const data = studies[key];
+
+      document.title = data.pageTitle;
+      document.getElementById("case-category").textContent = data.category;
+      document.getElementById("case-title").innerHTML = data.titleHtml;
+      document.getElementById("case-lead").textContent = data.lead;
+
+      const imgEl = document.getElementById("case-image");
+      imgEl.src = data.image;
+      imgEl.alt = data.imageAlt;
+
+      document.getElementById("case-live-url").href = data.liveUrl;
+      document.getElementById("meta-client").textContent = data.client;
+      document.getElementById("meta-sector").textContent = data.sector;
+      document.getElementById("meta-format").textContent = data.format;
+      document.getElementById("meta-focus").textContent = data.focus;
+      document.getElementById("case-context").textContent = data.context;
+      document.getElementById("case-solution").textContent = data.solution;
+
+      const highlightsContainer = document.getElementById("case-highlights");
+      highlightsContainer.innerHTML = data.highlights
+        .map(
+          (item) => `
+          <article class="highlight-card">
+            <span>${item.num}</span>
+            <h3>${item.title}</h3>
+            <p>${item.desc}</p>
+          </article>
+        `
+        )
+        .join("");
+
+      document.querySelectorAll("[data-project-link]").forEach((link) => {
+        if (link.getAttribute("data-project-link") === key) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

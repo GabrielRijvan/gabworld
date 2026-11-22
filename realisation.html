@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Toutes les réalisations de Ga.B World — Sites vitrines, tourisme, social media et créations web sur mesure." />
+  <meta name="theme-color" content="#051C24" />
+  <title>Réalisations — Ga.B World</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="realisation.css" />
+
+  <link rel="icon" type="image/png" href="assets/images/logo2.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="assets/images/logo4.png" media="(prefers-color-scheme: dark)" />
+</head>
+
+<body>
+  <div class="page-loader" id="page-loader">
+    <img src="assets/images/logo.png" alt="Logo Ga.B World" />
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html#accueil" aria-label="Ga.B World — Accueil">
+      <img src="assets/images/logo2.png" alt="Ga.B World" onerror="
+            this.style.display = 'none';
+            this.nextElementSibling.style.display = 'inline';
+          " />
+      <span>Ga.B World</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#services">Services</a>
+      <a href="realisation.html" class="active-link">Réalisations</a>
+      <a href="index.html#apropos">À propos</a>
+      <a href="index.html#faq">FAQ</a>
+      <a class="nav-cta" href="https://tally.so/r/LDP7lp" target="_blank" rel="noopener">Démarrer mon projet ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- En-tête de la page Réalisations -->
+    <section class="realisations-hero section">
+      <div class="section-heading reveal">
+        <a href="index.html#realisations" class="back-link">← Retour à l'accueil</a>
+        <p class="eyebrow">Catalogue des projets</p>
+        <h1>Toutes nos<br /><span>réalisations.</span></h1>
+        <p>
+          Explorez l'ensemble des sites web, identités digitales et interfaces
+          conçues sur mesure par Ga.B World pour ses clients et créateurs.
+        </p>
+      </div>
+
+      <!-- Filtres par catégorie -->
+      <div class="filter-bar reveal" role="tablist" aria-label="Filtrer les réalisations par catégorie">
+        <button type="button" class="filter-btn active" data-filter="all">Tous les projets</button>
+        <button type="button" class="filter-btn" data-filter="tourisme">Tourisme</button>
+        <button type="button" class="filter-btn" data-filter="service">Service</button>
+        <button type="button" class="filter-btn" data-filter="socialmedia">Social Media</button>
+      </div>
+    </section>
+
+    <!-- Grille complète des réalisations -->
+    <section class="realisations-catalogue section">
+      <div class="portfolio-grid" id="realisations-grid">
+        <!-- Projet 01 : Mada Discovery -->
+        <article class="portfolio-card reveal" data-category="tourisme">
+          <div class="portfolio-image">
+            <span class="project-tag">Tourisme</span>
+            <img src="assets/images/madadiscovery.jpg" alt="Capture d'écran du site Mada Discovery" loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <h3>Mada Discovery — Site vitrine touristique</h3>
+            <p>
+              Une immersion visuelle et ergonomique conçue pour valoriser une
+              destination, structurer l'offre et capter l'attention des voyageurs.
+            </p>
+            <div class="portfolio-actions">
+              <a href="https://madadiscovery.vercel.app/" class="btn btn-ghost portfolio-btn" target="_blank" rel="noopener">
+                Voir le site <span>↗</span>
+              </a>
+              <a href="etudedecas.html?projet=madadiscovery" class="btn btn-primary portfolio-btn" target="_blank" rel="noopener">
+                Étude de cas <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 02 : Studio Racine -->
+        <article class="portfolio-card reveal" data-category="service">
+          <div class="portfolio-image">
+            <span class="project-tag">Service</span>
+            <img src="assets/images/Studioracine.jpg" alt="Capture d'écran du site Studio Racine" loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <h3>Studio Racine — Site vitrine professionnel</h3>
+            <p>
+              Une communication claire et incarnée pour inspirer confiance,
+              valoriser l'univers du studio et convertir les visiteurs en clients.
+            </p>
+            <div class="portfolio-actions">
+              <a href="https://studioracine.vercel.app/" class="btn btn-ghost portfolio-btn" target="_blank" rel="noopener">
+                Voir le site <span>↗</span>
+              </a>
+              <a href="etudedecas.html?projet=studioracine" class="btn btn-primary portfolio-btn" target="_blank" rel="noopener">
+                Étude de cas <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 03 : Sarah.CM -->
+        <article class="portfolio-card reveal" data-category="socialmedia">
+          <div class="portfolio-image">
+            <span class="project-tag">Social Media</span>
+            <img src="assets/images/SarahCM.jpg" alt="Capture d'écran Sarah.CM — Community Manager & Social Media Strategist" loading="lazy" />
+          </div>
+          <div class="portfolio-content">
+            <h3>Sarah.CM — Community Manager &amp; Stratège</h3>
+            <p>
+              Une vitrine dynamique orientée conversion avec chiffres clés
+              animés, études de cas interactives et prise de contact fluide.
+            </p>
+            <div class="portfolio-actions">
+              <a href="https://sarah-cm.vercel.app/" class="btn btn-ghost portfolio-btn" target="_blank" rel="noopener">
+                Voir le site <span>↗</span>
+              </a>
+              <a href="etudedecas.html?projet=sarahcm" class="btn btn-primary portfolio-btn" target="_blank" rel="noopener">
+                Étude de cas <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Carte 04 : Prochain projet / Sur mesure -->
+        <article class="portfolio-card portfolio-card-next reveal" data-category="service">
+          <div class="next-project-box">
+            <span class="next-badge">Prochain projet</span>
+            <h3>Votre projet pourrait être le prochain.</h3>
+            <p>
+              Un site vitrine, une landing page ou une expérience sur mesure
+              pensée selon vos objectifs et votre identité.
+            </p>
+            <a href="https://tally.so/r/LDP7lp" class="btn btn-primary" target="_blank" rel="noopener">
+              Démarrer mon projet <span>↗</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Appel à l'action final -->
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Un projet similaire en tête ?</p>
+        <h2>
+          Donnons vie à<br /><span>votre prochain site.</span>
+        </h2>
+        <p>
+          Partagez-nous vos besoins, votre univers et vos objectifs en
+          quelques minutes pour recevoir une proposition adaptée.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary contact-btn-tally" href="https://tally.so/r/LDP7lp" target="_blank" rel="noopener">
+            Démarrer mon projet <span>↗</span>
+          </a>
+          <a class="btn btn-light contact-btn-realisations" href="index.html#services">
+            Découvrir nos offres
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Ga.B World</strong>
+      <p>Création de sites web modernes, personnalisés et performants.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#services">Services</a>
+      <a href="realisation.html">Réalisations</a>
+      <a href="https://tally.so/r/LDP7lp" target="_blank" rel="noopener">Démarrer mon projet</a>
+    </div>
+    <p class="copyright">
+      © <span id="year"></span> Ga.B World. Tous droits réservés.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const cards = document.querySelectorAll("#realisations-grid .portfolio-card[data-category]");
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+
+          filterButtons.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          cards.forEach((card) => {
+            const category = card.getAttribute("data-category");
+            if (filter === "all" || category === filter) {
+              card.style.display = "";
+              requestAnimationFrame(() => {
+                card.classList.add("visible");
+              });
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+/* ==========================================
+   STYLES SPÉCIFIQUES — ETUDEDECAS.HTML
+   ========================================== */
+
+.case-hero.section {
+    padding-top: 150px;
+    padding-bottom: 84px;
+    border-bottom: 1px solid var(--border);
+}
+
+.case-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 42px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    background: rgba(8, 43, 203, 0.07);
+    border: 1px solid rgba(8, 43, 203, 0.14);
+    padding: 8px 16px;
+    border-radius: 999px;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+
+.back-link:hover {
+    transform: translateX(-3px);
+    background: var(--color-primary);
+    color: var(--white);
+}
+
+.case-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.case-switcher a {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 8px 15px;
+    border-radius: 999px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    color: var(--color-dark);
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.case-switcher a:hover {
+    transform: translateY(-2px);
+    border-color: rgba(37, 153, 251, 0.45);
+    color: var(--color-primary);
+}
+
+.case-switcher a.active {
+    background: var(--color-dark);
+    border-color: var(--color-dark);
+    color: var(--white);
+}
+
+.case-header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.05fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.case-intro h1 {
+    font-size: clamp(2.8rem, 5.2vw, 4.6rem);
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.case-intro h1 span {
+    color: var(--color-primary);
+}
+
+.case-lead {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 540px;
+    margin-bottom: 30px;
+}
+
+.case-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.case-cover {
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: var(--color-dark);
+    border: 1px solid var(--border);
+    box-shadow: 0 24px 55px rgba(5, 28, 36, 0.12);
+}
+
+.case-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Synthèse méta */
+.case-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 52px;
+}
+
+.meta-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.meta-card span {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+}
+
+.meta-card strong {
+    font-size: 0.92rem;
+    color: var(--color-dark);
+}
+
+/* Détails */
+.case-details.section {
+    background: #edf2f7;
+    width: 100%;
+    max-width: none;
+    padding: 96px max(24px, calc((100vw - var(--container)) / 2));
+    border-bottom: 1px solid var(--border);
+}
+
+.case-story-grid {
+    max-width: var(--container);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.case-block {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 36px;
+}
+
+.case-block h2 {
+    font-size: clamp(2rem, 3.6vw, 3rem);
+    margin-bottom: 18px;
+}
+
+.case-block p:last-child {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.case-highlights {
+    max-width: var(--container);
+    margin: 72px auto 0;
+}
+
+.case-highlights .section-heading {
+    margin-bottom: 36px;
+}
+
+.case-highlights .section-heading h2 {
+    font-size: clamp(2.4rem, 4.5vw, 4rem);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.highlight-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--color-primary);
+    border-radius: var(--radius);
+    padding: 28px;
+}
+
+.highlight-card span {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    background: rgba(37, 153, 251, 0.12);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+.highlight-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+    color: var(--color-dark);
+}
+
+.highlight-card p {
+    color: var(--muted);
+    font-size: 0.84rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .case-hero.section {
+        padding-top: 135px;
+    }
+
+    .case-header-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .case-meta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-details.section {
+        padding: 72px 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .case-hero.section {
+        padding-top: 120px;
+    }
+
+    .case-meta-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .case-block {
+        padding: 24px;
+    }
+
+    .case-details.section {
+        padding: 56px 15px;
+    }
+}
